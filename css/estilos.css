@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    font-family: monospace;
+}
+/*Header*/
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a h2{
+    font-size: 1.5rem;
+    transition: all 300ms ease;
+}
+a h2:hover{
+    color: #FF914C;
+}
+.header{
+    position: fixed !important;
+    background-color: #333;
+    color: aliceblue;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon img{
+    height: 80px;
+    margin-right: 10px;
+}
+.description{
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 300ms ease;
+}
+.description:hover{
+    color: #FF914C;
+}
+/*Galeria*/
+.contenedor{
+    padding-top: 4rem;
+    transition: all 300ms ease;
+}
+.div--imgs{
+    width: 100%;
+    position: relative;
+}
+.div--imgs .imgs{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*para que la imagen no se distorcione */
+    border-radius: 1rem;   
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    grid-auto-rows: 22rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    gap: 2rem;
+    grid-auto-flow: dense;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+.galeria img:hover{
+    border: 4px solid #FF914C;
+    transition: .2s;
+}
+.imgs.efecto{
+    transform: scale(1.1);
+    transition: .4s;
+}
+.nombres{
+    position: absolute;
+    width: 100%;
+    top: 97%;
+    left: -2%;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    display: none;
+}
+.nombres.view{
+    display: block;
+    transition: 50s;
+}
+/*Footer*/
+.pie-pagina{
+    width: 100%;
+    background: #333;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 5px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 150px;
+
+}
+.pie-pagina .grupo-1 .box h2{
+    color: aliceblue;
+    margin-bottom: 25px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .box h2:hover{
+    color: #FF914C;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: aliceblue;
+    margin-right: 10px;
+    background-color: rgb(80, 78, 78);
+    text-align: center;
+    border-radius: 20px;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #FF914C;
+}
+.pie-pagina .grupo-2{
+    background:rgb(80, 78, 78);
+    padding: 15px 10px;
+    text-align: center;
+    color:rgb(156, 154, 154);
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-2:hover{
+    color: #FF914C;
+}
